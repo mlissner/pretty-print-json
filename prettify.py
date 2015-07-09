@@ -33,10 +33,10 @@ def make_pretty(dir):
         for filename in fnmatch.filter(filenames, '*.json'):
             matches.append(os.path.join(root, filename))
             count += 1
-            stdout.write("\rFound:\t\t%s" % count)
+            stdout.write("\r  Found:\t\t%s" % count)
             stdout.flush()
 
-    print "\nProcessing the files..."
+    print "\n\nProcessing the files..."
 
     completed = 0
     for match in matches:
@@ -45,10 +45,10 @@ def make_pretty(dir):
         with open(match, 'w') as j_out:
             json.dump(j, j_out, indent=2)
         completed += 1
-        stdout.write("\rComplete:\t\t%s" % completed)
+        stdout.write("\r  Complete:\t\t%s" % completed)
         stdout.flush()
 
-    print "\nDone!"
+    print "\n\nDone!"
 
 
 def main():
