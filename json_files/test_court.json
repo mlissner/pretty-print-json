@@ -1,0 +1,21 @@
+[
+  {
+    "pk": "test", 
+    "model": "search.court", 
+    "fields": {
+      "end_date": null, 
+      "citation_string": "Test", 
+      "short_name": "Testing Supreme Court", 
+      "in_use": true, 
+      "url": "https://www.courtlistener.com/", 
+      "notes": "", 
+      "jurisdiction": "F", 
+      "has_oral_argument_scraper": false, 
+      "full_name": "Testing Supreme Court", 
+      "position": 0.0, 
+      "date_modified": "2013-08-14T16:46:30Z", 
+      "has_opinion_scraper": true, 
+      "start_date": "2013-06-13"
+    }
+  }
+]
